@@ -1,0 +1,13 @@
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #fc0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
