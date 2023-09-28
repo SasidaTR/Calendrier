@@ -1,11 +1,21 @@
-import React from 'react';
+import React from "react";
 
 function Home() {
+  const rows = 10;
+  const hexagonsPerRow = 10;
+
+  const hexagons = [];
+
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < hexagonsPerRow; col++) {
+      hexagons.push(<div key={`${row}-${col}`} className="hexagon"></div>);
+    }
+  }
+
   return (
-    <div>
-      <h1>Page d'accueil</h1>
-      {/* Ajoutez le contenu de votre page d'accueil ici */}
-    </div>
+    <main>
+      <section className="hive">{hexagons}</section>
+    </main>
   );
 }
 

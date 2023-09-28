@@ -5,6 +5,33 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "PlusJakartaSans-Bold";
+  src: url("fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.extra-light {
+  font-family: PlusJakartaSans-ExtraLight;
+}
+
+.light {
+  font-family: PlusJakartaSans-Light;
+}
+
+.medium {
+  font-family: PlusJakartaSans-Medium;
+}
+
+.bold {
+  font-family: PlusJakartaSans-Bold;
+}
+
+.extra-bold {
+  font-family: PlusJakartaSans-ExtraBold;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -13,33 +40,59 @@ body {
   padding: 0;
 }
 
+main {
+  position: relative;
+  top: 60px;
+}
+
+/* Navbar */
 nav {
   background-color: #fc0;
   height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  z-index: 1;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   height: 100%;
+  padding: 0 20px;
 }
 
 .logo-nav {
-  height: 80%;
+  height: 75%;
 }
 
 .nav-link-container {
   display: flex;
   align-items: center;
   list-style: none;
+  padding: 0 10px;
 }
 
 .nav-link-container li a {
   text-decoration: none;
-  padding-left: 20px;
+  padding: 0 10px;
   color: black;
   font-size: 20px;
+}
+
+/* Home section 1 */
+.hive {
+  display: grid;
+  grid-template-columns: repeat(10, 100px);
+  gap: 10px;
+}
+
+.hexagon {
+  height: 115px;
+  width: 100px;
+  background: #111;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
