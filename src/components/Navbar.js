@@ -12,7 +12,7 @@ function Navbar() {
         />
       </div>
       <ul className="nav-link-container">
-        <li className="nav">
+        <li>
           <Link to="/">Accueil</Link>
         </li>
         <li>

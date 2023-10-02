@@ -55,6 +55,7 @@ nav {
   left: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 1;
 }
 
@@ -83,11 +84,40 @@ nav {
   font-size: 20px;
 }
 
+/* Footer */
+footer {
+  background-color: #fc0;
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 1;
+}
+
+.footer-link-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0 5px;
+}
+
+.footer-link-container li a {
+  text-decoration: none;
+  padding: 0 5px;
+  color: black;
+  font-size: 15px;
+}
+
 /* Home section 1 */
 .hive {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(100, 100px);
-  height: calc(100vh - 60px);
+  height: calc(100vh - 60px - 30px);
   overflow: hidden;
   animation: animate 3s linear infinite;
 }
